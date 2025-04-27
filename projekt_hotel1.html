@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .hotel-header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .hotel-header .details {
+            flex: 1;
+        }
+        .hotel-header .details h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .hotel-header .details .rating {
+            color: #ffcc00;
+            font-size: 20px;
+        }
+        .description {
+            margin-top: 20px;
+        }
+        .rooms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .rooms-table th, .rooms-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .rooms-table th {
+            background-color: #f4f4f4;
+        }
+        .reserve-btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .reserve-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <img src="placeholderimg.jpg" alt="Hotel Image">
+            <div class="details">
+                <h1>Hotel Name</h1>
+                <div class="rating">★★★★☆</div>
+                <p class="description">This is a brief description of the hotel. It provides all the necessary details that guests would need to know before making a reservation.</p>
+            </div>
+        </div>
+        <table class="rooms-table">
+            <thead>
+                <tr>
+                    <th>Room Name</th>
+                    <th>For How Many People</th>
+                    <th>Price per Night</th>
+                    <th>Reservation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Single Room</td>
+                    <td>1</td>
+                    <td>$100</td>
+                    <td><button class="reserve-btn">Reserve</button></td>
+                </tr>
+                <tr>
+                    <td>Double Room</td>
+                    <td>2</td>
+                    <td>$150</td>
+                    <td><button class="reserve-btn">Reserve</button></td>
+                </tr>
+                <tr>
+                    <td>Family Suite</td>
+                    <td>4</td>
+                    <td>$250</td>
+                    <td><button class="reserve-btn">Reserve</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

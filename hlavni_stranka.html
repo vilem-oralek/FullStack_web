@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>project x</title>
+  <link rel="stylesheet" href="projekt_home.css">
+  <link rel="stylesheet" href="header.css">
+  <?php include 'conn.php';?>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="rezervuj.png" alt="logo" class="logo">
+      </div>
+      <h1 class="name">Rezervujsi.cz</h1>
+    </div>
+    <div style="width: 30%;" class="search-bar-conteiner">
+      <input type="text" placeholder="Search..." class="search-bar" >
+      <button class="search-button">Search</button>
+    </div>
+    <div>
+      <a href="projekt_login.php"><button class="button"> Přihlásit </button></a>
+      <a href="projekt_register.php"><button class="button"> Zaregistrovat </button></a>
+    </div>
+  </header>
+  <hr>
+  <div class="two-div-container">
+    <div class="filter">
+      <h2>Filtry</h2><hr style="border-width: 2px">
+      <form>
+        <label for="datum-prijezdu" style="font-size: 18px">Datum příjezdu</label>
+        <br>
+        <input type="date" id="datum-prijezdu" name="datum-prijezdu" style="padding: 5px"><br>
+        <br>
+        <label for="datum-odjezdu" style="font-size: 18px">Datum odjezdu</label>
+        <br>
+        <input type="date" id="datum-odjezdu" name="datum-odjezdu" style="padding: 5px"><br>
+        <br>
+        <label for="pocet-lidi" style="font-size: 18px">Počet osob</label><br>
+        <input id="pocet-lidi" name="pocet-lidi" type="number" style="width: 35px" min="0" max="99"><br>
+        <br>
+        <label for="pocet-hvezdicek" style="font-size: 18px">Počet hvězdiček</label><br>
+        <input id="pocet-hvezdicek" name="pocet-hvezdicek" type="number" style="width: 35px" max="5" min="0"><br>
+        <br>
+        <label for="vzdalenost" style="font-size: 18px">Vzdálenost</label><br>
+        <input id="vzdalenost" name="vzdalenost" type="range" min="0">
+        <h3> <u>Vlastnosti ubytování</u></h3>
+        <label for="WIFI" style="font-size: 18px">WiFi zdarma</label>
+        <input id="WIFI" name="WIFI" type="checkbox"> <br>
+        <br>
+        <label for="bazen" style="font-size: 18px">Bazén</label>
+        <input id="bazen" name="bazen" type="checkbox"> <br>
+        <br>
+        <label for="wellness" style="font-size: 18px">Wellness/Spa</label>
+        <input id="wellness" name="wellness" type="checkbox"> <br>
+        <br>
+        <label for="hotel" style="font-size: 18px">Hotel</label>
+        <input id="hotel" name="hotel" type="checkbox"> <br>
+        <label for="apartman" style="font-size: 18px">Apartmán</label>
+        <input id="apartman" name="apartman" type="checkbox"> <br>
+      </form>
+    </div>
+    <div class="hotel-container">
+      <div style="width: auto;">  
+        <img src="placeholderimg.jpg" alt="placeholder" class="hotel-img">
+      </div>
+      <div class="hotel-text">
+        <div style="display: flex; align-items: center; width: 100%;">
+          <h2>Název Hotelu</h2>
+          <h2 class="hotel-rating">5☆</h2>
+        </div>
+        <p style="margin-top: 0;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vitae nihil magni itaque dicta cupiditate aspernatur pariatur sequi ipsum earum illum amet nostrum modi, accusamus et officia fugit eveniet dignissimos?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio provident ex deleniti unde in distinctio sint dolor harum voluptatem ipsa quis numquam, dolore saepe cum fugit impedit aperiam exercitationem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo magni quibusdam, ipsam nihil accusantium delectus aspernatur est repellat aut laudantium eum ullam soluta tempora debitis sed expedita quam repudiandae!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

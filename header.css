@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: 10vh;
+  } 
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    font-family: 'Century Gothic';
+    width: 20%;
+    text-align: center;
+    margin: 0;
+    color: inherit;
+    text-decoration: none; 
+  }
+
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+
+  .button {
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .search-bar {
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+  }
+  .search-button{
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+  }
+  .search-bar-conteiner{
+    display: flex;
+    align-items: center;
+  }
+  button{
+    cursor: pointer;
+  }
+  .hyperlink {
+    color: black;
+    text-decoration: none; 
+}

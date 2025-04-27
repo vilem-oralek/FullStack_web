@@ -1,0 +1,62 @@
+body {
+  background-image: url('background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.filter{
+  text-align: center;
+  width: 15%;
+  height: 100%;
+  border-style: groove;
+  border-width: 5px;
+  align-items: center;
+}
+.hotel-container{
+  margin: 1%;
+  margin-top: 0;
+  border-style: groove;
+  border-width: 5px;
+  display: flex;
+  margin-bottom: 0;
+  flex-direction: row;
+  border-bottom: none;
+}
+.two-div-container{
+  display: flex;
+}
+.hotel-img{
+  width: 270px;
+  margin: 5px;
+}
+.hotel-text {
+  width: 75%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.hotel-rating{
+  margin-left: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.hotels-list{
+  width: 100%;
+}
+.check-box{
+  float: right;
+  margin-right: 18px;
+}
+button{
+  cursor: pointer;
+}
+.hyperlink{
+    color: inherit;
+    text-decoration: none;
+
+}
